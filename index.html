@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A/B Testing Demo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/@growth-book/growthbook-react"></script>
+    <script src="js/growthbook-init.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>A/B Testing Portfolio Project</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#tech">Tech Stack</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About This Project</h2>
+            <p>This project demonstrates A/B testing implemented with PySpark for data processing and GrowthBook for
+                experiment management. It showcases how to set up experiments, collect data, and analyze results to make
+                data-driven decisions.</p>
+        </section>
+
+        <section id="demo">
+            <h2>Live A/B Test Demo</h2>
+            <p>You're currently participating in a live A/B test! You've been randomly assigned to either Variant A or
+                Variant B of our product page.</p>
+            <div id="variant-container">
+                <!-- Content will be loaded dynamically via JavaScript -->
+                <div class="loading">Loading variant...</div>
+            </div>
+        </section>
+
+        <section id="results">
+            <h2>Real-time Results</h2>
+            <div class="metrics-container">
+                <div class="metric-card">
+                    <h3>Conversion Rate</h3>
+                    <div class="metric-comparison">
+                        <div class="variant-a">
+                            <h4>Variant A</h4>
+                            <p class="rate">12.1%</p>
+                        </div>
+                        <div class="variant-b">
+                            <h4>Variant B</h4>
+                            <p class="rate">15.3%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <h3>Avg. Session Duration</h3>
+                    <div class="metric-comparison">
+                        <div class="variant-a">
+                            <h4>Variant A</h4>
+                            <p class="duration">2m 15s</p>
+                        </div>
+                        <div class="variant-b">
+                            <h4>Variant B</h4>
+                            <p class="duration">3m 42s</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="metric-card">
+                    <h3>Click-through Rate</h3>
+                    <div class="metric-comparison">
+                        <div class="variant-a">
+                            <h4>Variant A</h4>
+                            <p class="rate">24.8%</p>
+                        </div>
+                        <div class="variant-b">
+                            <h4>Variant B</h4>
+                            <p class="rate">34.2%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="statistical-significance">
+                <h3>Statistical Analysis</h3>
+                <p>P-value: 0.0023 (Statistically Significant)</p>
+                <div class="recommendation">
+                    <h4>Recommendation:</h4>
+                    <p>Variant B shows a statistically significant improvement in conversion rate and should be
+                        implemented.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech">
+            <h2>Technology Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <h3>PySpark</h3>
+                    <p>Used for data processing and statistical analysis of large datasets</p>
+                </div>
+                <div class="tech-item">
+                    <h3>GrowthBook</h3>
+                    <p>Open-source A/B testing platform for feature flagging and experiment management</p>
+                </div>
+                <div class="tech-item">
+                    <h3>GitHub Pages</h3>
+                    <p>Hosting platform for the live demonstration</p>
+                </div>
+                <div class="tech-item">
+                    <h3>JavaScript & HTML/CSS</h3>
+                    <p>Frontend implementation for variants and user tracking</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by [Your Name] | <a href="https://github.com/yourusername/ab-testing-pyspark-portfolio">View on
+                GitHub</a></p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/ab_testing.js"></script>
+    <script src="js/tracker.js"></script>
+</body>
+
+</html>
